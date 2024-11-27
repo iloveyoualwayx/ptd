@@ -1,0 +1,850 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* THIS FILE IS AUTOGENERATED - DO NOT MODIFY */ 
+:root {
+	--zimbra-icon-minus: "\e953";
+	--zimbra-icon-add-event: "\e900";
+	--zimbra-icon-folder-add: "\e901";
+	--zimbra-icon-add-note: "\e902";
+	--zimbra-icon-plus: "\e903";
+	--zimbra-icon-archive: "\e904";
+	--zimbra-icon-caret-down: "\e905";
+	--zimbra-icon-user-o: "\e906";
+	--zimbra-icon-user: "\e907";
+	--zimbra-icon-bold: "\e908";
+	--zimbra-icon-list-ul: "\e909";
+	--zimbra-icon-calendar-alt-o: "\e90a";
+	--zimbra-icon-calendar-o: "\e90b";
+	--zimbra-icon-align-center: "\e90c";
+	--zimbra-icon-chat: "\e90d";
+	--zimbra-icon-check-square: "\e90e";
+	--zimbra-icon-square-o: "\e90f";
+	--zimbra-icon-check: "\e910";
+	--zimbra-icon-close-circle: "\e911";
+	--zimbra-icon-close: "\e912";
+	--zimbra-icon-collapse-items: "\e913";
+	--zimbra-icon-angle-double-left: "\e914";
+	--zimbra-icon-pencil: "\e915";
+	--zimbra-icon-address-book: "\e916";
+	--zimbra-icon-arrows-alt-inverse: "\e917";
+	--zimbra-icon-file-word-o: "\e918";
+	--zimbra-icon-chevron-right: "\e919";
+	--zimbra-icon-download: "\e91a";
+	--zimbra-icon-angle-right: "\e91b";
+	--zimbra-icon-smile-o: "\e91c";
+	--zimbra-icon-expand-items: "\e91d";
+	--zimbra-icon-angle-double-right: "\e91e";
+	--zimbra-icon-facebook-official: "\e91f";
+	--zimbra-icon-mail-forward: "\e920";
+	--zimbra-icon-expand: "\e921";
+	--zimbra-icon-GIF: "\e922";
+	--zimbra-icon-grid: "\e923";
+	--zimbra-icon-question-circle: "\e924";
+	--zimbra-icon-home: "\e925";
+	--zimbra-icon-image: "\e926";
+	--zimbra-icon-arrows-alt: "\e927";
+	--zimbra-icon-indent: "\e928";
+	--zimbra-icon-italic: "\e929";
+	--zimbra-icon-align-left: "\e92a";
+	--zimbra-icon-link: "\e92b";
+	--zimbra-icon-mobile-phone: "\e92c";
+	--zimbra-icon-ellipsis-h: "\e92d";
+	--zimbra-icon-folder-move: "\e92e";
+	--zimbra-icon-angle-left: "\e92f";
+	--zimbra-icon-angle-down: "\e930";
+	--zimbra-icon-angle-up: "\e991";
+	--zimbra-icon-book: "\e931";
+	--zimbra-icon-list-ol: "\e932";
+	--zimbra-icon-external-link: "\e933";
+	--zimbra-icon-outdent: "\e934";
+	--zimbra-icon-file-pdf-o: "\e935";
+	--zimbra-icon-multimedia-active: "\e936";
+	--zimbra-icon-multimedia: "\e937";
+	--zimbra-icon-file-powerpoint-o: "\e938";
+	--zimbra-icon-print: "\e939";
+	--zimbra-icon-radio: "\e93a";
+	--zimbra-icon-radio-active: "\e93b";
+	--zimbra-icon-mail-reply-all: "\e93c";
+	--zimbra-icon-mail-reply: "\e93d";
+	--zimbra-icon-align-right: "\e93e";
+	--zimbra-icon-search: "\e93f";
+	--zimbra-icon-cog: "\e940";
+	--zimbra-icon-music: "\e941";
+	--zimbra-icon-shield: "\e942";
+	--zimbra-icon-star: "\e943";
+	--zimbra-icon-alarm: "\e944";
+	--zimbra-icon-arrow-left: "\e945";
+	--zimbra-icon-address-book-sync: "\e946";
+	--zimbra-icon-adn: "\e947";
+	--zimbra-icon-font: "\e948";
+	--zimbra-icon-trash: "\e949";
+	--zimbra-icon-twitter: "\e94a";
+	--zimbra-icon-underline: "\e94b";
+	--zimbra-icon-arrow-down: "\e94c";
+	--zimbra-icon-users: "\e94d";
+	--zimbra-icon-play-circle-o: "\e94e";
+	--zimbra-icon-file-excel-o: "\e94f";
+	--zimbra-icon-file-archive-o: "\e950";
+	--zimbra-icon-clock: "\e951";
+	--zimbra-icon-check-circle: "\e952";
+	--zimbra-icon-camera: "\e954";
+	--zimbra-icon-minus-square: "\e955";
+	--zimbra-icon-paperclip: "\e956";
+	--zimbra-icon-arrow-up: "\e957";
+	--zimbra-icon-bell: "\e958";
+	--zimbra-icon-calendar-range: "\e959";
+	--zimbra-icon-trash-forever: "\e95a";
+	--zimbra-icon-user-circle-o: "\e95b";
+	--zimbra-icon-add-contact: "\e95c";
+	--zimbra-icon-envelope: "\e95d";
+	--zimbra-icon-add-circle: "\e95e";
+	--zimbra-icon-text-options: "\e95f";
+	--zimbra-icon-assign-list: "\e960";
+	--zimbra-icon-bars: "\e961";
+	--zimbra-icon-restore: "\e962";
+	--zimbra-icon-remove-list: "\e963";
+	--zimbra-icon-lock: "\e964";
+	--zimbra-icon-repeat: "\e965";
+	--zimbra-icon-refresh: "\e966";
+	--zimbra-icon-chevron-left: "\e967";
+	--zimbra-icon-bell-slash: "\e968";
+	--zimbra-icon-warning: "\e969";
+	--zimbra-icon-encrypted: "\e96a";
+	--zimbra-icon-search-plus: "\e96b";
+	--zimbra-icon-search-minus: "\e96c";
+	--zimbra-icon-rotate_right: "\e96d";
+	--zimbra-icon-rotate_left: "\e96e";
+	--zimbra-icon-not-signed: "\e96f";
+	--zimbra-icon-signed: "\e970";
+	--zimbra-icon-cloud: "\e971";
+	--zimbra-icon-videocam: "\e972";
+	--zimbra-icon-location: "\e973";
+	--zimbra-icon-verified: "\e974";
+	--zimbra-icon-not-verified: "\e975";
+	--zimbra-icon-outline-user-circle-o: "\e976";
+	--zimbra-icon-web: "\e977";
+	--zimbra-icon-code: "\e978";
+	--zimbra-icon-check-square-o: "\e979";
+	--zimbra-icon-about: "\e97a";
+	--zimbra-icon-language: "\e97b";
+	--zimbra-icon-copy-to-clipboard: "\e97c";
+	--zimbra-icon-priority-high: "\e97d";
+	--zimbra-icon-priority-low: "\e97e";
+	--zimbra-icon-send-feedback: "\e97f";
+	--zimbra-icon-drag: "\e980";
+	--zimbra-icon-label: "\e981";
+	--zimbra-icon-install-as-app: "\e982";
+	--zimbra-icon-dashboard: "\e983";
+	--zimbra-icon-share: "\e984";
+	--zimbra-icon-arrow-up-thin: "\e985";
+	--zimbra-icon-arrow-right-thin: "\e986";
+	--zimbra-icon-arrow-down-thin: "\e987";
+	--zimbra-icon-arrow-left-thin: "\e992";
+	--zimbra-icon-collapse: "\e988";
+	--zimbra-icon-email-24px: "\e989";
+	--zimbra-icon-pin: "\e98a";
+	--zimbra-icon-pin-outline: "\e98b";
+	--zimbra-icon-preview-right: "\e98d";
+	--zimbra-icon-preview-bottom: "\e98e";
+	--zimbra-icon-preview-none: "\e98f";
+	--zimbra-icon-briefcase: "\e990";
+	--zimbra-icon-folder: "\e98c";
+	--zimbra-icon-integration: "\e993";
+	--zimbra-icon-up-to-parent: "\e994";
+	--zimbra-icon-notes: "\e995";
+	--zimbra-icon-zimbra-window-minimize: "\e996";
+	--zimbra-icon-zimbra-window-restore: "\e997";
+	--zimbra-icon-zimbra-make-current: "\e998";
+}
+:root{
+	--zimbra-icon-minus:"\e953";
+	--zimbra-icon-add-event:"\e900";
+	--zimbra-icon-folder-add:"\e901";
+	--zimbra-icon-add-note:"\e902";
+	--zimbra-icon-plus:"\e903";
+	--zimbra-icon-archive:"\e904";
+	--zimbra-icon-caret-down:"\e905";
+	--zimbra-icon-user-o:"\e906";
+	--zimbra-icon-user:"\e907";
+	--zimbra-icon-bold:"\e908";
+	--zimbra-icon-list-ul:"\e909";
+	--zimbra-icon-calendar-alt-o:"\e90a";
+	--zimbra-icon-calendar-o:"\e90b";
+	--zimbra-icon-align-center:"\e90c";
+	--zimbra-icon-chat:"\e90d";
+	--zimbra-icon-check-square:"\e90e";
+	--zimbra-icon-square-o:"\e90f";
+	--zimbra-icon-check:"\e910";
+	--zimbra-icon-close-circle:"\e911";
+	--zimbra-icon-close:"\e912";
+	--zimbra-icon-collapse-items:"\e913";
+	--zimbra-icon-angle-double-left:"\e914";
+	--zimbra-icon-pencil:"\e915";
+	--zimbra-icon-address-book:"\e916";
+	--zimbra-icon-arrows-alt-inverse:"\e917";
+	--zimbra-icon-file-word-o:"\e918";
+	--zimbra-icon-chevron-right:"\e919";
+	--zimbra-icon-download:"\e91a";
+	--zimbra-icon-angle-right:"\e91b";
+	--zimbra-icon-smile-o:"\e91c";
+	--zimbra-icon-expand-items:"\e91d";
+	--zimbra-icon-angle-double-right:"\e91e";
+	--zimbra-icon-facebook-official:"\e91f";
+	--zimbra-icon-mail-forward:"\e920";
+	--zimbra-icon-expand:"\e921";
+	--zimbra-icon-GIF:"\e922";
+	--zimbra-icon-grid:"\e923";
+	--zimbra-icon-question-circle:"\e924";
+	--zimbra-icon-home:"\e925";
+	--zimbra-icon-image:"\e926";
+	--zimbra-icon-arrows-alt:"\e927";
+	--zimbra-icon-indent:"\e928";
+	--zimbra-icon-italic:"\e929";
+	--zimbra-icon-align-left:"\e92a";
+	--zimbra-icon-link:"\e92b";
+	--zimbra-icon-mobile-phone:"\e92c";
+	--zimbra-icon-ellipsis-h:"\e92d";
+	--zimbra-icon-folder-move:"\e92e";
+	--zimbra-icon-angle-left:"\e92f";
+	--zimbra-icon-angle-down:"\e930";
+	--zimbra-icon-angle-up:"\e991";
+	--zimbra-icon-book:"\e931";
+	--zimbra-icon-list-ol:"\e932";
+	--zimbra-icon-external-link:"\e933";
+	--zimbra-icon-outdent:"\e934";
+	--zimbra-icon-file-pdf-o:"\e935";
+	--zimbra-icon-multimedia-active:"\e936";
+	--zimbra-icon-multimedia:"\e937";
+	--zimbra-icon-file-powerpoint-o:"\e938";
+	--zimbra-icon-print:"\e939";
+	--zimbra-icon-radio:"\e93a";
+	--zimbra-icon-radio-active:"\e93b";
+	--zimbra-icon-mail-reply-all:"\e93c";
+	--zimbra-icon-mail-reply:"\e93d";
+	--zimbra-icon-align-right:"\e93e";
+	--zimbra-icon-search:"\e93f";
+	--zimbra-icon-cog:"\e940";
+	--zimbra-icon-music:"\e941";
+	--zimbra-icon-shield:"\e942";
+	--zimbra-icon-star:"\e943";
+	--zimbra-icon-alarm:"\e944";
+	--zimbra-icon-arrow-left:"\e945";
+	--zimbra-icon-address-book-sync:"\e946";
+	--zimbra-icon-adn:"\e947";
+	--zimbra-icon-font:"\e948";
+	--zimbra-icon-trash:"\e949";
+	--zimbra-icon-twitter:"\e94a";
+	--zimbra-icon-underline:"\e94b";
+	--zimbra-icon-arrow-down:"\e94c";
+	--zimbra-icon-users:"\e94d";
+	--zimbra-icon-play-circle-o:"\e94e";
+	--zimbra-icon-file-excel-o:"\e94f";
+	--zimbra-icon-file-archive-o:"\e950";
+	--zimbra-icon-clock:"\e951";
+	--zimbra-icon-check-circle:"\e952";
+	--zimbra-icon-camera:"\e954";
+	--zimbra-icon-minus-square:"\e955";
+	--zimbra-icon-paperclip:"\e956";
+	--zimbra-icon-arrow-up:"\e957";
+	--zimbra-icon-bell:"\e958";
+	--zimbra-icon-calendar-range:"\e959";
+	--zimbra-icon-trash-forever:"\e95a";
+	--zimbra-icon-user-circle-o:"\e95b";
+	--zimbra-icon-add-contact:"\e95c";
+	--zimbra-icon-envelope:"\e95d";
+	--zimbra-icon-add-circle:"\e95e";
+	--zimbra-icon-text-options:"\e95f";
+	--zimbra-icon-assign-list:"\e960";
+	--zimbra-icon-bars:"\e961";
+	--zimbra-icon-restore:"\e962";
+	--zimbra-icon-remove-list:"\e963";
+	--zimbra-icon-lock:"\e964";
+	--zimbra-icon-repeat:"\e965";
+	--zimbra-icon-refresh:"\e966";
+	--zimbra-icon-chevron-left:"\e967";
+	--zimbra-icon-bell-slash:"\e968";
+	--zimbra-icon-warning:"\e969";
+	--zimbra-icon-encrypted:"\e96a";
+	--zimbra-icon-search-plus:"\e96b";
+	--zimbra-icon-search-minus:"\e96c";
+	--zimbra-icon-rotate_right:"\e96d";
+	--zimbra-icon-rotate_left:"\e96e";
+	--zimbra-icon-not-signed:"\e96f";
+	--zimbra-icon-signed:"\e970";
+	--zimbra-icon-cloud:"\e971";
+	--zimbra-icon-videocam:"\e972";
+	--zimbra-icon-location:"\e973";
+	--zimbra-icon-verified:"\e974";
+	--zimbra-icon-not-verified:"\e975";
+	--zimbra-icon-outline-user-circle-o:"\e976";
+	--zimbra-icon-web:"\e977";
+	--zimbra-icon-code:"\e978";
+	--zimbra-icon-check-square-o:"\e979";
+	--zimbra-icon-about:"\e97a";
+	--zimbra-icon-language:"\e97b";
+	--zimbra-icon-copy-to-clipboard:"\e97c";
+	--zimbra-icon-priority-high:"\e97d";
+	--zimbra-icon-priority-low:"\e97e";
+	--zimbra-icon-send-feedback:"\e97f";
+	--zimbra-icon-drag:"\e980";
+	--zimbra-icon-label:"\e981";
+	--zimbra-icon-install-as-app:"\e982";
+	--zimbra-icon-dashboard:"\e983";
+	--zimbra-icon-share:"\e984";
+	--zimbra-icon-arrow-up-thin:"\e985";
+	--zimbra-icon-arrow-right-thin:"\e986";
+	--zimbra-icon-arrow-down-thin:"\e987";
+	--zimbra-icon-arrow-left-thin:"\e992";
+	--zimbra-icon-collapse:"\e988";
+	--zimbra-icon-email-24px:"\e989";
+	--zimbra-icon-pin:"\e98a";
+	--zimbra-icon-pin-outline:"\e98b";
+	--zimbra-icon-preview-right:"\e98d";
+	--zimbra-icon-preview-bottom:"\e98e";
+	--zimbra-icon-preview-none:"\e98f";
+	--zimbra-icon-briefcase:"\e990";
+	--zimbra-icon-folder:"\e98c";
+	--zimbra-icon-integration:"\e993";
+	--zimbra-icon-up-to-parent:"\e994";
+	--zimbra-icon-notes:"\e995";
+	--zimbra-icon-zimbra-window-minimize:"\e996";
+	--zimbra-icon-zimbra-window-restore:"\e997";
+	--zimbra-icon-zimbra-make-current:"\e998";
+}
+:root{
+	--brand-primary-50:#d9edf6;
+	--brand-primary-100:#b3dbec;
+	--brand-primary-200:#80c4e0;
+	--brand-primary-300:#4dacd4;
+	--brand-primary-400:#1f96c8;
+	--brand-primary-500:#0088c1;
+	--brand-primary-600:#0076a8;
+	--brand-primary-700:#00618a;
+	--brand-primary-800:#00567a;
+	--brand-primary-900:#004968;
+	--brand-secondary-50:#fde6de;
+	--brand-secondary-100:#fbcebd;
+	--brand-secondary-200:#f8ad92;
+	--brand-secondary-300:#f58c66;
+	--brand-secondary-400:#f36f3e;
+	--brand-secondary-500:#f15b24;
+	--brand-secondary-600:#de511e;
+	--brand-secondary-700:#c74617;
+	--brand-secondary-800:#bb4013;
+	--brand-secondary-900:#ae390e;
+	--brand-tertiary-50:#dae8f3;
+	--brand-tertiary-100:#b4d2e7;
+	--brand-tertiary-200:#82b4d7;
+	--brand-tertiary-300:#5095c6;
+	--brand-tertiary-400:#237ab8;
+	--brand-tertiary-500:#0568ae;
+	--brand-tertiary-600:#045995;
+	--brand-tertiary-700:#034879;
+	--brand-tertiary-800:#033f69;
+	--brand-tertiary-900:#023558;
+	--brand-success-50:#d9ebe2;
+	--brand-success-100:#b3d7c5;
+	--brand-success-200:#80bd9f;
+	--brand-success-300:#4da278;
+	--brand-success-400:#1f8a55;
+	--brand-success-500:#007a3e;
+	--brand-success-600:#006131;
+	--brand-success-700:#004322;
+	--brand-success-800:#00331a;
+	--brand-success-900:#002111;
+	--brand-info-50:#e6f6fa;
+	--brand-info-100:#ceecf5;
+	--brand-info-200:#ade0ef;
+	--brand-info-300:#8cd3e8;
+	--brand-info-400:#6fc8e2;
+	--brand-info-500:#5bc0de;
+	--brand-info-600:#4db4d3;
+	--brand-info-700:#3da6c5;
+	--brand-info-800:#349ebe;
+	--brand-info-900:#2a96b6;
+	--brand-warning-50:#fff4dd;
+	--brand-warning-100:#ffeabb;
+	--brand-warning-200:#ffdc8e;
+	--brand-warning-300:#ffcd60;
+	--brand-warning-400:#ffc137;
+	--brand-warning-500:#ffb81c;
+	--brand-warning-600:#eda915;
+	--brand-warning-700:#d7980d;
+	--brand-warning-800:#cb8e08;
+	--brand-warning-900:#bf8404;
+	--brand-danger-50:#f8dfdf;
+	--brand-danger-100:#f1bfbf;
+	--brand-danger-200:#e79595;
+	--brand-danger-300:#dd6a6a;
+	--brand-danger-400:#d54444;
+	--brand-danger-500:#cf2a2a;
+	--brand-danger-600:#ba2626;
+	--brand-danger-700:#a12121;
+	--brand-danger-800:#941e1e;
+	--brand-danger-900:#851b1b;
+}
+:root{
+	--toolbar-height:49px;
+	--mobile-toolbar-height:57px;
+	--external-header-height:24px;
+	--search-header-height:72px;
+	--sidebar-width:192px;
+	--rightbar-width:192px;
+	--login-background-color:var(--brand-primary-500);
+	--login-inner-background-color:#fff;
+	--gray-base:#000;
+	--gray-darkest:#262626;
+	--gray-darker:#4d4d4d;
+	--gray-dark:#666666;
+	--gray:#777777;
+	--gray-light:#999999;
+	--gray-lighter:#d9d9d9;
+	--gray-lightest:#f2f2f2;
+	--gray-placeholder:var(--gray-light);
+	--warm-gray:var(--gray-light);
+	--off-white:#fafafa;
+	--translucent-white:rgba(255, 255, 255, 0.7);
+	--branding-font-family:"Roboto", Helvetica, Arial, sans-serif;
+	--branding-font-family-regular:"Roboto", Helvetica, Arial, sans-serif;
+	--branding-font-family-medium:"Roboto", Helvetica, Arial, sans-serif;
+	--branding-font-family-bold:"Roboto", Helvetica, Arial, sans-serif;
+	--branding-font-family-medium-italic:"Roboto", Helvetica, Arial, sans-serif;
+	--color-light-positive:#00bd02;
+	--color-light-negative:#ff1f1f;
+	--body-bg:#ffffff;
+	--text-color:var(--gray-darker);
+	--text-color-light:#ffffff;
+	--dialog-title-fg:#000000;
+	--background-gray:var(--gray-lightest);
+	--link-color:var(--brand-primary-500);
+	--link-hover-color:var(--brand-primary-800);
+	--link-hover-decoration:underline;
+	--item-hover-bg:#ffffff;
+	--item-selected-bg:var(--brand-primary-100);
+	--border-color:var(--gray-lighter);
+	--hr-border:var(--gray-lighter);
+	--placeholder-color:var(--gray-light);
+	--app-menu-active-color:var(--gray-lightest);
+	--list-active-bg:var(--brand-primary-50);
+	--list-hover-bg:var(--gray-lightest);
+	--folder-item-hover-bg:var(--list-hover-bg);
+	--sidebar-bg-color:var(--gray-lightest);
+	--sidebar-header-bg-color:var(--gray-lightest);
+	--sidebar-shaded-color:var(--gray-lighter);
+	--rightbar-bg-color:var(--gray-lightest);
+	--read-pane-toolbar-color:var(--gray-lightest);
+	--read-pane-bg-color:var(--gray-lightest);
+	--favorite-indicator-active:var(--brand-warning-500);
+	--favorite-indicator-inactive:var(--gray);
+	--favorite-indicator-hover:var(--brand-warning-400);
+	--favorite-indicator-disabled:var(--gray-lighter);
+	--trash-indicator:var(--gray);
+	--trash-indicator-hover:var(--brand-primary-500);
+	--file-type-doc:#0f73ff;
+	--file-type-ppt:#ff9937;
+	--file-type-pdf:#ff4c4e;
+	--file-type-xls:#0e9d58;
+	--file-type-zip:#ada293;
+	--file-type-default:#949cae;
+	--file-type-media:#bc0e67;
+	--file-type-code:#00b4ca;
+	--toast-success-color:var(--brand-success-400);
+	--toast-failure-color:var(--brand-danger-500);
+	--toast-warning-color:var(--brand-warning-500);
+	--font-family-sans-serif:"Roboto", Helvetica, Arial, sans-serif;
+	--font-family-serif:Georgia, "Times New Roman", Times, serif;
+	--font-family-monospace:Menlo, Monaco, Consolas, "Courier New", monospace;
+	--font-family-base:"Roboto", Helvetica, Arial, sans-serif;
+	--font-brand-primary:inherit;
+	--font-family-primary:inherit;
+	--font-family-secondary:inherit;
+	--font-family-plainText:monospace;
+	--font-size-base:14px;
+	--font-size-med:calc(var(--font-size-base) * 1.15);
+	--font-size-large:calc(var(--font-size-base) * 1.25);
+	--font-size-small:calc(var(--font-size-base) * 0.85);
+	--font-size-h1:calc(var(--font-size-base) * 2.6);
+	--font-size-h2:calc(var(--font-size-base) * 2.15);
+	--font-size-h3:calc(var(--font-size-base) * 1.7);
+	--font-size-h4:calc(var(--font-size-base) * 1.25);
+	--font-size-h5:var(--font-size-base);
+	--font-size-h6:calc(var(--font-size-base) * 0.85);
+	--line-height-base:1.42857143;
+	--line-height-computed:calc(var(--font-size-base) * var(--line-height-base));
+	--headings-font-family:inherit;
+	--headings-font-weight:300;
+	--headings-line-height:1.1;
+	--headings-color:inherit;
+	--headings-small-color:var(--gray-light);
+	--spacing-base:8px;
+	--spacing-xs:calc(var(--spacing-base) / 2);
+	--spacing-sm:var(--spacing-base);
+	--spacing-md:calc(var(--spacing-base) * 2);
+	--spacing-lg:calc(var(--spacing-base) * 3);
+	--spacing-xl:calc(var(--spacing-base) * 4);
+	--icon-size-xs:12px;
+	--icon-size-sm:16px;
+	--icon-size-md:24px;
+	--icon-size-lg:32px;
+	--logo-height:32px;
+	--logo-max-width:200px;
+	--header-bg:var(--gray-lightest);
+	--header-fg:var(--gray-darker);
+	--header-actions-fg:var(--gray-darker);
+	--external-header-bg:var(--brand-primary-700);
+	--external-header-fg:#ffffff;
+	--search-highlighter:#fff100;
+	--row-height-narrow:72px;
+	--row-height-wide:27px;
+}
+
+
+/*# sourceMappingURL=vendors~bundle.6f8236bc.chunk.css.map*/
